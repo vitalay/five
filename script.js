@@ -26,7 +26,7 @@
      
 // }
 // let two = '';
-// for (let i =0; i < 10; i++) {
+// for (let i = 0; i < 10; i++) {
 //   if (i == 6) continue;
 //   two += i + ' ';
 // }
@@ -38,3 +38,16 @@ const btn = document.querySelector('.b-1').addEventListener('click', function t1
 }
 })
 
+const out2 = document.querySelector('.out-2')
+const btn2 = document.querySelector('.b-2').addEventListener('click', function t2() {
+  for (let i = 2; i <= 122; i++) {
+     if (i % 2 == 0) 
+    out2.innerHTML += i + ' ';
+  }
+})
+const out3 = document.querySelector('.out-3')
+const btn3 = document.querySelector('.b-3').addEventListener('click', function t3() {
+  for (let i = 25; i >= 7; i--) {
+      out3.textContent += i + ' ';
+  }
+})
