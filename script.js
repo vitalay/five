@@ -49,13 +49,17 @@ const btn2 = document.querySelector('.b-2').addEventListener('click', function t
 const out3 = document.querySelector('.out-3')
 const btn3 = document.querySelector('.b-3').addEventListener('click', function t3() {
   for (let i = 25; i >= 7; i--) {
+    
       out3.textContent += i + ' ';
   }
 })
 
+
 const out4 = document.querySelector('.out-4')
 const btn4 = document.querySelector('.b-4').addEventListener('click', function t4() {
-  for (let i = 77; i >= 35; i--) {
+   
+  for (let i = 77; i >= 35; i -= 3) {
+  
     out4.textContent += i + '_';
   }
 })
