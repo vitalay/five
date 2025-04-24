@@ -56,10 +56,23 @@ const btn3 = document.querySelector('.b-3').addEventListener('click', function t
 
 
 const out4 = document.querySelector('.out-4')
-const btn4 = document.querySelector('.b-4').addEventListener('click', function t4() {
-   
+document.querySelector('.b-4').addEventListener('click', function t4() {
   for (let i = 77; i >= 35; i -= 3) {
-  
     out4.textContent += i + '_';
   }
+})
+
+
+document.querySelector('.b-5').addEventListener('click',
+function t5() {
+  let out = ''; // Создаём пустую строку
+  for (let i = 1; i <= 17; i++) {
+    out += i; // Добавляем текущее число
+    if (i % 2 === 0) {
+      out += '_**'; // Если чётное
+    } else {
+      out += '_*'; // Если нечётное
+    }
+  }
+  document.querySelector('.out-5').textContent = out;
 })
