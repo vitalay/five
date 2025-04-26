@@ -193,3 +193,10 @@ document.querySelector('.b-12').addEventListener('click',
     }
   })
 
+document.querySelector('.b-13').addEventListener('click',
+  function t13() {
+    const elem = document.querySelectorAll('.i-13');
+    for (let i = 0; i < elem.length; i++) {
+      result = elem[i].value = i + 1;
+    }
+  })
