@@ -185,4 +185,11 @@ function t11() {
   document.querySelector('.out-11').textContent = result.trim();
 })
 
+document.querySelector('.b-12').addEventListener('click',
+  function t12() {
+    const elem = document.querySelectorAll('.div-12');
+    for (let i = 0; i < elem.length; i++) {
+ result = elem[i].style.background = 'orange';
+    }
+  })
 
