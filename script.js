@@ -128,4 +128,13 @@ document.querySelector('.b-7').addEventListener('click', function t7(){
   document.querySelector('.out-7').textContent = out;
 })
 
+document.querySelector('.b-8').addEventListener('click', function t8(){
+  let out = '';
+  const count = document.querySelector('.i-81').value;
+  const count2 = document.querySelector('.i-82').value;
+  for (let i = count; i <= count2; i++) {
+    out += i + ' ';
+  }
+  document.querySelector('.out-8').textContent = out;
+})
 
