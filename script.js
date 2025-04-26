@@ -138,3 +138,19 @@ document.querySelector('.b-8').addEventListener('click', function t8(){
   document.querySelector('.out-8').textContent = out;
 })
 
+document.querySelector('.b-9').addEventListener('click', function t9(){
+
+   const num1 = document.querySelector('.i-91').value;
+  const num2 = document.querySelector('.i-92').value;
+  const start = Math.min(num1, num2);
+  const end = Math.max(num1, num2);
+  let result = '';
+  for (let i = start; i <= end; i++) {
+    result += i + ' ';
+  }
+  document.querySelector('.out-9').textContent = result.trim();
+
+  })
+
+  
+
