@@ -76,3 +76,56 @@ function t5() {
   }
   document.querySelector('.out-5').textContent = out;
 })
+
+
+// document.querySelector('.b-6').addEventListener('click',
+  
+//   function t6() {
+   
+//     let out6 = ''; // Создаём пустую строку
+//     for (let i = 0; i <= 2; i++) {
+    
+//       out6 += '******<br>'; // Добавляем текущее число
+//       // out6.innerHTML  = "******";
+//       // console.log(out6);
+//     }
+//     document.querySelector('.out-6').textContent = out6;
+
+//   })
+
+//  document.querySelector('.b-6').addEventListener('click',
+// function t6() {
+//   const count = parseInt(document.querySelector('.i-6').value); // Получаем число строк
+//   console.log(count);
+//   let out = ''; // Создаём пустую строку для результата
+ 
+//   for (let i = 0; i < count; i++) {
+//     out += '******<br>'; // Добавляем 6 звёздочек и перенос
+   
+//   }
+
+//   document.querySelector('.out-6').innerHTML = out; // Выводим с поддержкой HTML
+// })
+document.querySelector('.b-6').addEventListener('click',
+  function t6() {
+    let out = ''; // Создаём пустую строку для результата
+    for (let i = 0; i < 3; i++) {
+      out += '******<br>'; // Добавляем 6 звёздочек и перенос
+     
+      
+      // Добавляем 6 звёздочек и перенос
+    }
+    document.querySelector('.out-6').innerHTML = out; // Выводим с поддержкой HTML
+  })
+
+document.querySelector('.b-7').addEventListener('click', function t7(){
+
+  const count = document.querySelector('.i-7').value;
+  let out = '';
+  for (let i = count; i > 0; i--) {
+    out += i + ' ';
+  }
+  document.querySelector('.out-7').textContent = out;
+})
+
+
