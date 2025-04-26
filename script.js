@@ -219,3 +219,20 @@ function t14() {
   // 5. Выводим результат
   document.querySelector('.out-14').textContent = selectedValue;
 })
+
+document.querySelector('.b-15').addEventListener('click',
+function t15() {
+  let result = '';
+  let a = 10;
+  let b = 0;
+  for (let i = 0; i <= 10; i++) {
+    result += a + ' ' + b + ' ';
+    a--;
+    b++;
+  }
+
+  // Убираем последний лишний пробел
+  result = result.trim();
+
+  document.querySelector('.out-15').textContent = result;
+})
