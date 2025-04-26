@@ -152,11 +152,37 @@ document.querySelector('.b-9').addEventListener('click', function t9(){
 
   })
 
+
   document.querySelector('.b-10').addEventListener('click', function t10(){
     for (let i = 1950; i <= 2000; i++) {
       if (i % 2 === 0)
       document.querySelector('.out-10').textContent += i + ' ';
     }
+})
+
+
+// document.querySelector('.b-11').addEventListener('click', function t11(){
+//   const divs = document.querySelectorAll('.div-11');
+//   // 2. Создаем массив для хранения текстов
+//   const texts = [];
+//   // 3. Перебираем элементы в цикле
+//   for (let i = 0; i < divs.length; i++) {
+//     // 4. Добавляем текст каждого div в массив
+//     texts.push(divs[i].textContent);
+//   }
+//   // 5. Объединяем массив в строку с пробелами
+//   const result = texts.join(' ');
+
+//   // 6. Выводим результат
+//   document.querySelector('.out-11').textContent = result;
+// })
+document.querySelector('.b-11').addEventListener('click',
+function t11() {
+  let result = '';
+  document.querySelectorAll('.div-11').forEach(div => {
+    result += div.textContent + ' ';
+  });
+  document.querySelector('.out-11').textContent = result.trim();
 })
 
 
