@@ -200,3 +200,22 @@ document.querySelector('.b-13').addEventListener('click',
       result = elem[i].value = i + 1;
     }
   })
+
+document.querySelector('.b-14').addEventListener('click',
+function t14() {
+  // 1. Получаем все нужные input элементы
+  const inputs = document.querySelectorAll('input.i-14');
+  let selectedValue = '';
+
+  // 2. Перебираем их в цикле
+  for (let i = 0; i < inputs.length; i++) {
+    // 3. Проверяем, выбран ли текущий элемент
+    if (inputs[i].checked) {
+      // 4. Если выбран, сохраняем его value
+      selectedValue = inputs[i].value;
+      break; // Прерываем цикл, так как нужно только одно значение
+    }
+  }
+  // 5. Выводим результат
+  document.querySelector('.out-14').textContent = selectedValue;
+})
