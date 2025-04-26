@@ -152,5 +152,11 @@ document.querySelector('.b-9').addEventListener('click', function t9(){
 
   })
 
-  
+  document.querySelector('.b-10').addEventListener('click', function t10(){
+    for (let i = 1950; i <= 2000; i++) {
+      if (i % 2 === 0)
+      document.querySelector('.out-10').textContent += i + ' ';
+    }
+})
+
 
